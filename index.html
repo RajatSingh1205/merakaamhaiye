@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajat Kumar Singh | Backend Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Rajat</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__actions">
+        <button class="theme-button" id="theme-button" aria-label="Toggle theme">🌙</button>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Open menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__content">
+          <p class="home__subtitle">Hello, I'm</p>
+          <h1 class="home__title">Rajat Kumar Singh</h1>
+          <h3 class="home__profession">Backend Developer | Java & Spring Boot</h3>
+          <p class="home__description">
+            I build scalable backend systems, secure APIs, and CI/CD-driven deployments using Java, Spring Boot, Docker, and Azure.
+          </p>
+          <div class="home__buttons">
+            <a href="#projects" class="button">View Projects</a>
+            <a href="mailto:rajat.k.singh1209@gmail.com" class="button button--ghost">Email Me</a>
+          </div>
+        </div>
+        <div class="home__image-wrap">
+          <div class="home__image">RKS</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container grid about__container">
+        <div>
+          <h2 class="section__title">About Me</h2>
+          <p class="about__text">
+            I am a Computer Science undergraduate at Dr. A.P.J. Abdul Kalam Technical University (2022–2026), focused on backend development and DevOps fundamentals. I enjoy building production-ready APIs, integrating third-party services, and deploying containerized applications with observability and automation best practices.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="section__title">Skills</h2>
+        <div class="skills__grid">
+          <div class="skills__card"><strong>Languages:</strong> Java (8–21)</div>
+          <div class="skills__card"><strong>Frameworks:</strong> Spring Boot, Spring, Hibernate</div>
+          <div class="skills__card"><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</div>
+          <div class="skills__card"><strong>Testing:</strong> JUnit 5, Mockito</div>
+          <div class="skills__card"><strong>Messaging:</strong> Apache Kafka</div>
+          <div class="skills__card"><strong>DevOps:</strong> Docker, CI/CD, YAML Pipelines</div>
+          <div class="skills__card"><strong>Cloud:</strong> Azure AKS, Blob Storage, Monitoring</div>
+          <div class="skills__card"><strong>Tools:</strong> Git, Maven, Swagger, Tomcat</div>
+          <div class="skills__card"><strong>OS:</strong> Windows, Linux</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section__title">Projects</h2>
+        <div class="projects__grid">
+          <article class="project__card">
+            <h3>End-to-End CI/CD Pipeline with Azure DevOps and AKS</h3>
+            <p>Automated build-test-deploy workflows with multi-stage YAML pipelines, Docker images, AKS deployment, secure config with ConfigMaps/Secrets, and Grafana monitoring.</p>
+          </article>
+          <article class="project__card">
+            <h3>Trail-Backend Application</h3>
+            <p>Java Spring backend integrating TMDB APIs using WebClient and DTO mapping, designed with SOLID OOP architecture and Dockerized for consistent deployments.</p>
+          </article>
+          <article class="project__card">
+            <h3>Social Media Application</h3>
+            <p>Spring Boot + Spring Security backend with JWT authentication, RBAC, scalable REST APIs, and layered architecture (Controller-Service-Repository).</p>
+          </article>
+          <article class="project__card">
+            <h3>Journal Application</h3>
+            <p>RESTful journaling app built with Spring Boot and MongoDB implementing CRUD APIs using MVC principles and document-based data modeling.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="education section" id="education">
+      <div class="container">
+        <h2 class="section__title">Education</h2>
+        <div class="projects__grid">
+          <article class="project__card">
+            <h3>B.Tech (CSE), AKTU</h3>
+            <p>2022 – 2026 | Uttar Pradesh, India</p>
+          </article>
+          <article class="project__card">
+            <h3>12th Standard (PCM), CBSE</h3>
+            <p>March 2021 | Maharishi Vidya Mandir, Uttar Pradesh, India</p>
+          </article>
+          <article class="project__card">
+            <h3>10th Standard, CBSE</h3>
+            <p>March 2018 | Maharishi Vidya Mandir, Uttar Pradesh, India</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section__title">Contact</h2>
+        <div class="contact__info">
+          <p><strong>Name:</strong> Rajat Kumar Singh</p>
+          <p><strong>Email:</strong> <a href="mailto:rajat.k.singh1209@gmail.com">rajat.k.singh1209@gmail.com</a></p>
+          <p><strong>Phone:</strong> +91-8532098450</p>
+          <p><strong>LinkedIn:</strong> rajat-singh</p>
+          <p><strong>GitHub:</strong> rajatSingh1205</p>
+          <p><strong>Location:</strong> Aligarh, Uttar Pradesh, India</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Rajat Kumar Singh. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
