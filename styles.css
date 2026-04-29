@@ -1,0 +1,138 @@
+:root {
+  --header-height: 4rem;
+  --first-color: #4f46e5;
+  --first-color-alt: #4338ca;
+  --title-color: #111827;
+  --text-color: #4b5563;
+  --body-color: #f9fafb;
+  --container-color: #ffffff;
+  --border-color: #e5e7eb;
+}
+
+body.dark-theme {
+  --title-color: #f9fafb;
+  --text-color: #d1d5db;
+  --body-color: #111827;
+  --container-color: #1f2937;
+  --border-color: #374151;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--body-color);
+  color: var(--text-color);
+}
+
+.container { max-width: 1080px; margin: 0 auto; padding: 0 1.25rem; }
+.section { padding: 5rem 0 3rem; }
+.section__title { color: var(--title-color); font-size: 2rem; margin-bottom: 1.5rem; }
+.grid { display: grid; gap: 2rem; }
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: var(--container-color);
+  border-bottom: 1px solid var(--border-color);
+  z-index: 100;
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo { font-weight: 700; color: var(--title-color); text-decoration: none; }
+.nav__list { list-style: none; display: flex; gap: 1rem; }
+.nav__link { text-decoration: none; color: var(--text-color); font-weight: 500; }
+.nav__link.active-link, .nav__link:hover { color: var(--first-color); }
+.nav__actions { display: flex; align-items: center; gap: .75rem; }
+
+.theme-button, .nav__toggle {
+  border: 1px solid var(--border-color);
+  background: var(--container-color);
+  color: var(--title-color);
+  padding: .45rem .55rem;
+  border-radius: .4rem;
+  cursor: pointer;
+}
+
+.home { padding-top: 8rem; }
+.home__container { grid-template-columns: repeat(2, 1fr); align-items: center; }
+.home__title { font-size: 2.8rem; color: var(--title-color); }
+.home__subtitle { color: var(--first-color); font-weight: 600; }
+.home__profession { margin: .5rem 0 1rem; color: var(--title-color); }
+.home__description { margin-bottom: 1.5rem; max-width: 520px; }
+
+.button {
+  display: inline-block;
+  background: var(--first-color);
+  color: #fff;
+  padding: .85rem 1.3rem;
+  border-radius: .6rem;
+  text-decoration: none;
+  border: none;
+}
+.button:hover { background: var(--first-color-alt); }
+.button--ghost { background: transparent; color: var(--first-color); border: 1px solid var(--first-color); }
+.home__buttons { display: flex; gap: .8rem; }
+
+.home__image-wrap { display: grid; place-items: center; }
+.home__image {
+  width: 260px; height: 260px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: linear-gradient(135deg, var(--first-color), #06b6d4);
+  color: white; font-size: 4rem; font-weight: 700;
+  box-shadow: 0 16px 40px rgba(79, 70, 229, 0.35);
+}
+
+.about__text { line-height: 1.8; max-width: 760px; }
+.skills__grid, .projects__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.skills__card, .project__card {
+  background: var(--container-color);
+  border: 1px solid var(--border-color);
+  border-radius: .8rem;
+  padding: 1.2rem;
+}
+.project__card h3 { color: var(--title-color); margin-bottom: .6rem; }
+
+.contact__form { display: grid; gap: .9rem; max-width: 620px; }
+.contact__form input, .contact__form textarea {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  background: var(--container-color);
+  color: var(--title-color);
+  border-radius: .55rem;
+  padding: .9rem 1rem;
+}
+
+.footer {
+  border-top: 1px solid var(--border-color);
+  padding: 1.8rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: var(--header-height);
+    right: -100%;
+    width: 75%;
+    height: calc(100% - var(--header-height));
+    background: var(--container-color);
+    padding: 1.5rem;
+    transition: .3s;
+    border-left: 1px solid var(--border-color);
+  }
+  .show-menu { right: 0; }
+  .nav__list { flex-direction: column; }
+  .home__container { grid-template-columns: 1fr; }
+  .home__image { width: 200px; height: 200px; font-size: 3rem; }
+  .skills__grid, .projects__grid { grid-template-columns: 1fr; }
+}

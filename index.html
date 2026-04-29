@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajat Kumar Singh | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Rajat</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__actions">
+        <button class="theme-button" id="theme-button" aria-label="Toggle theme">🌙</button>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Open menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__content">
+          <p class="home__subtitle">Hello, I'm</p>
+          <h1 class="home__title">Rajat Kumar Singh</h1>
+          <h3 class="home__profession">Frontend Developer</h3>
+          <p class="home__description">
+            I build responsive and user-friendly websites with modern web technologies.
+          </p>
+          <div class="home__buttons">
+            <a href="#projects" class="button">View Projects</a>
+            <a href="#contact" class="button button--ghost">Contact Me</a>
+          </div>
+        </div>
+        <div class="home__image-wrap">
+          <div class="home__image">RKS</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container grid about__container">
+        <div>
+          <h2 class="section__title">About Me</h2>
+          <p class="about__text">
+            I'm Rajat Kumar Singh, a passionate developer focused on creating beautiful, fast, and accessible web experiences. I enjoy turning ideas into practical products with clean code and thoughtful design.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="section__title">Skills</h2>
+        <div class="skills__grid">
+          <div class="skills__card">HTML5</div>
+          <div class="skills__card">CSS3</div>
+          <div class="skills__card">JavaScript</div>
+          <div class="skills__card">React</div>
+          <div class="skills__card">Git & GitHub</div>
+          <div class="skills__card">Responsive Design</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section__title">Projects</h2>
+        <div class="projects__grid">
+          <article class="project__card">
+            <h3>Portfolio Website</h3>
+            <p>Modern personal portfolio website with responsive layout and smooth interactions.</p>
+          </article>
+          <article class="project__card">
+            <h3>Landing Page</h3>
+            <p>Product landing page focused on performance, accessibility, and conversions.</p>
+          </article>
+          <article class="project__card">
+            <h3>Dashboard UI</h3>
+            <p>Clean dashboard interface with cards, charts, and adaptable components.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section__title">Contact</h2>
+        <form class="contact__form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="button">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Rajat Kumar Singh. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
